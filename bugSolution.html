@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <div id="anotherDiv">
+    This is more text
+  </div>
+  <script>
+    // Correct way to access and modify the content of a div
+    document.getElementById("myDiv").textContent = "This is new text";
+    //Correct way of accessing using getElementsByTagName
+    document.getElementsByTagName("div")[0].textContent = "This is new text";
+  </script>
+</body>
+</html>
